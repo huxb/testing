@@ -1,0 +1,9 @@
+<ul id="detailList" class="list-inline" ng-repeat="orderData in orders | filter:searchBox">
+    <li><a ui-sref='orders.detail{{orderID:order.id}}' class="ng-binding"</li>
+    <li>{{orderData.tag}}</li>
+    <li>$ {{orderData.price | currency}}</li>
+    <li><a ui sref="{{orderData.id}}">Click here for more details on {{orderData.name}}</a></li>
+</ul>
+<form id='orderForm' name="myForm" method="post">
+    
+</form>

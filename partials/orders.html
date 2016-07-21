@@ -1,0 +1,8 @@
+<input type="text" ng-model="searchBox">
+<ul id="orderList" class="list-inline" ng-repeat="orderData in lists | filter:searchBox">
+    <li>{{orderData.name}}</li>
+    <li>{{orderData.tag}}</li>
+    <li>$ {{orderData.price | currency}}</li>
+    <li><a ui sref="{{orderData.id}}">Click here for more details on {{orderData.name}}</a></li>
+</ul>
+
